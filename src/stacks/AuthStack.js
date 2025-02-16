@@ -9,6 +9,7 @@ import EmailLogin from "../screens/EmailLogin";
 import Mobile from "../screens/Mobile";
 import ConfirmOTP from "../screens/ConfirmOtp";
 import Home from "../screens/Home";
+import Session from "../screens/Session";
 
 const Stack = createNativeStackNavigator();
 
@@ -43,6 +44,11 @@ const AuthStack = () => {
       <Stack.Screen
         name="Base"
         component={Home}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="Session"
+        component={Session}
         options={{ headerShown: false }}
       />
     </Stack.Navigator>

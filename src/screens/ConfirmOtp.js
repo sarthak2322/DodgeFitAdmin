@@ -75,7 +75,7 @@ export default function ConfirmOTP() {
 
         <View style={styles.bottom}>
           <TouchableOpacity onPress={navigateNext} style={styles.NextButton}>
-            <Text style={styles.textSign}>Resend</Text>
+            <Text style={styles.textSign}>Next</Text>
           </TouchableOpacity>
         </View>
       </KeyboardAvoidingView>
