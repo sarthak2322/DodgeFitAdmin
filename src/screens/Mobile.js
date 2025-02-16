@@ -13,7 +13,7 @@ import React, { useState } from "react";
 import { useNavigation } from "@react-navigation/native";
 
 export default function Mobile() {
-  const [countryCode, setCountryCode] = useState("+91");
+  const [countryCode, setCountryCode] = useState("India (+91)");
   const [number, setNumber] = useState();
 
   const [check1, setCheck1] = useState();
@@ -27,7 +27,8 @@ export default function Mobile() {
 
   return (
     <SafeAreaView style={styles.cont}>
-      <KeyboardAvoidingView style={styles.cont}>
+      <View style={styles.cont}>
+        {/* <KeyboardAvoidingView style={styles.cont}> */}
         <View style={styles.head}>
           <Text style={styles.headText}>Your Phone Number</Text>
         </View>
@@ -42,6 +43,8 @@ export default function Mobile() {
             onChangeText={setNumber}
             value={number}
             keyboardType="numeric"
+            placeholder="Phone Number"
+            placeholderTextColor={"white"}
           />
 
           <Pressable
@@ -77,7 +80,7 @@ export default function Mobile() {
             <Text style={styles.textSign}>Next</Text>
           </TouchableOpacity>
         </View>
-      </KeyboardAvoidingView>
+      </View>
     </SafeAreaView>
   );
 }
@@ -110,6 +113,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: "white",
     color: "white",
+    paddingLeft: 10,
   },
   signinButton: {
     paddingVertical: 12,

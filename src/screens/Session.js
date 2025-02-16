@@ -206,29 +206,41 @@ export default function Session() {
           onPress={() => {}}
           style={{
             backgroundColor: "#8288E8",
-            width: 307,
+            // width: 307,
             height: 61,
             marginLeft: 10,
             alignItems: "center",
             justifyContent: "center",
             borderRadius: 36,
+            flex: 8,
           }}
         >
           <Text
-            style={{ textAlign: "center", fontSize: 20, fontWeight: "bold" }}
+            style={{
+              textAlign: "center",
+              fontSize: 20,
+              fontWeight: "bold",
+            }}
           >
             Start Workout
           </Text>
         </Pressable>
+
         <View
           style={{
-            padding: 20,
+            padding: 10,
             borderRadius: "50%",
             backgroundColor: "#414339",
+            flex: 1,
+            aspectRatio: 1,
+            alignItems: "center",
+            justifyContent: "center",
+            marginRight: 10,
           }}
         >
           <Icon6 name="music" size={20} color="white" />
         </View>
+
         {/* <Navbar /> */}
       </View>
     </View>

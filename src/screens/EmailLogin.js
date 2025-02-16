@@ -7,6 +7,7 @@ import {
   TextInput,
   View,
   TouchableOpacity,
+  Image,
 } from "react-native";
 
 import React, { useState } from "react";
@@ -34,11 +35,15 @@ export default function EmailLogin() {
             style={styles.input}
             onChangeText={setEmail}
             value={email}
+            placeholder="Email"
+            placeholderTextColor={"white"}
           />
           <TextInput
             style={styles.input}
             onChangeText={setPassword}
             value={password}
+            placeholder="Password"
+            placeholderTextColor={"white"}
           />
           <TouchableOpacity onPress={navigateNext} style={styles.signinButton}>
             <Text style={styles.textSign}>Sign in</Text>
@@ -52,9 +57,11 @@ export default function EmailLogin() {
         </View>
         <View style={styles.bottom}>
           <TouchableOpacity onPress={() => {}} style={styles.bottombutton}>
+            <Image source={require("../../assets/logos/google.png")} />
             <Text style={styles.bottombuttonText}>Google</Text>
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {}} style={styles.bottombutton}>
+            <Image source={require("../../assets/logos/facebook.png")} />
             <Text style={styles.bottombuttonText}>Facebook</Text>
           </TouchableOpacity>
         </View>
@@ -84,7 +91,7 @@ const styles = StyleSheet.create({
   form: {
     flex: 2,
     justifyContent: "center",
-    paddingHorizontal: 20,
+    paddingHorizontal: 10,
     gap: 20,
     borderBottomColor: "grey",
     borderBottomWidth: 1,
@@ -94,10 +101,11 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: "white",
     color: "white",
+    paddingLeft: 10,
   },
   signinButton: {
     paddingVertical: 12,
-    paddingHorizontal: 32,
+    paddingHorizontal: 16,
     borderRadius: 10,
     alignItems: "center",
     backgroundColor: "#9089ED",
@@ -143,6 +151,8 @@ const styles = StyleSheet.create({
     height: 62,
     alignItems: "center",
     justifyContent: "center",
+    flexDirection: "row",
+    gap: 5,
   },
   bottombuttonText: {
     color: "white",
