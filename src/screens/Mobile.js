@@ -106,7 +106,7 @@ const styles = StyleSheet.create({
   form: {
     flex: 2,
     justifyContent: "center",
-    paddingHorizontal: 20,
+    paddingHorizontal: 30,
     gap: 40,
   },
   input: {
@@ -131,10 +131,12 @@ const styles = StyleSheet.create({
 
   agree: {
     flexDirection: "row",
+    paddingRight: 20,
   },
 
   agreeText: {
     color: "white",
+    paddingRight: 10,
   },
 
   agreeCheck: {

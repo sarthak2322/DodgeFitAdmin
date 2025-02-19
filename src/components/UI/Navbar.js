@@ -21,11 +21,11 @@ export default function Navbar() {
       <Pressable
         style={styles.navItem}
         onPress={() => {
-          navigation.navigate("Base");
+          navigation.navigate("Performance");
         }}
       >
         <FoundationIcon name="graph-bar" size={37} color="black" />
-        <Text style={styles.navText}>Book Apointment</Text>
+        <Text style={styles.navText}>Performance</Text>
       </Pressable>
 
       <Pressable
@@ -35,8 +35,11 @@ export default function Navbar() {
         }}
       >
         {/* <FontAwesome6 name="user-doctor" size={37} color="black" /> */}
-        <Image source={require("../../../assets/homeimages/clasesicon.png")} />
-        <Text style={styles.navText}>Treatment</Text>
+        <Image
+          source={require("../../../assets/homeimages/clasesicon.png")}
+          style={{ width: 37, height: 37 }}
+        />
+        <Text style={styles.navText}>Classes</Text>
       </Pressable>
       <Pressable
         style={styles.navItem}
@@ -86,9 +89,9 @@ const styles = StyleSheet.create({
     height: 60,
   },
   navText: {
-    fontSize: 7,
+    fontSize: 10,
   },
   centerNavText: {
-    fontSize: 10,
+    fontSize: 12,
   },
 });
