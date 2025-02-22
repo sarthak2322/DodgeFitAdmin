@@ -31,7 +31,7 @@ export default function Navbar() {
       <Pressable
         style={styles.navItem}
         onPress={() => {
-          navigation.navigate("Base");
+          navigation.navigate("Classes");
         }}
       >
         {/* <FontAwesome6 name="user-doctor" size={37} color="black" /> */}
@@ -44,7 +44,7 @@ export default function Navbar() {
       <Pressable
         style={styles.navItem}
         onPress={() => {
-          navigation.navigate("Base");
+          navigation.navigate("Profile");
         }}
       >
         <Icon name="user" size={37} color="black" />

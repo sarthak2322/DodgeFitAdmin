@@ -11,6 +11,8 @@ import ConfirmOTP from "../screens/ConfirmOtp";
 import Home from "../screens/Home";
 import Session from "../screens/Session";
 import Performance from "../screens/Performance";
+import Profile from "../screens/Profile";
+import Classes from "../screens/Classes";
 
 const Stack = createNativeStackNavigator();
 
@@ -55,6 +57,16 @@ const AuthStack = () => {
       <Stack.Screen
         name="Performance"
         component={Performance}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="Profile"
+        component={Profile}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="Classes"
+        component={Classes}
         options={{ headerShown: false }}
       />
     </Stack.Navigator>
