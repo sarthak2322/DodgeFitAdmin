@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "skyler",
+    "name": "skyler-admin",
     "slug": "skyler",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -29,6 +29,7 @@
       "eas": {
         "projectId": "464e25d7-140f-4235-9537-395f68ef34e5"
       }
-    }
+    },
+    "owner": "sarthakcoll"
   }
 }
