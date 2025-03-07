@@ -8,11 +8,13 @@ import SelectLogin from "../screens/SelectLogin";
 import EmailLogin from "../screens/EmailLogin";
 import Mobile from "../screens/Mobile";
 import ConfirmOTP from "../screens/ConfirmOtp";
-import Home from "../screens/Home";
+import Dashboard from "../screens/Dashboard";
 import Session from "../screens/Session";
 import Performance from "../screens/Performance";
 import Profile from "../screens/Profile";
 import Classes from "../screens/Classes";
+import More from "../screens/More";
+import Enquiries from "../screens/Enquiries";
 
 const Stack = createNativeStackNavigator();
 
@@ -46,7 +48,7 @@ const AuthStack = () => {
       />
       <Stack.Screen
         name="Base"
-        component={Home}
+        component={Dashboard}
         options={{ headerShown: false }}
       />
       <Stack.Screen
@@ -67,6 +69,16 @@ const AuthStack = () => {
       <Stack.Screen
         name="Classes"
         component={Classes}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="More"
+        component={More}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="Enquiries"
+        component={Enquiries}
         options={{ headerShown: false }}
       />
     </Stack.Navigator>
